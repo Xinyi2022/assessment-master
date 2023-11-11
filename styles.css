@@ -3,8 +3,8 @@
 body {
   background-color: black;
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  margin: 0%;
+  padding: 0%;
 }
 
 h2 {
@@ -229,4 +229,92 @@ input[type=submit] {
   margin-top: 18px;
   background-color: orange;
   border: none;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+  .logo {
+    height: 5ch;
+  }
+
+  .nav {
+    flex-shrink: 0.2;
+    width: 90%;
+    height: 30px;
+  }
+
+  .partnership {
+    padding: 10px;
+  }
+
+
+  .partnerlogo-container {
+    width: 30px;
+    height: 30px;
+  }
+
+  .header {
+    font-size: 15px;
+  }
+
+  .magzine h1 {
+    font-size: 30px;
+  }
+
+  .article h2 {
+    font-size: medium;
+  }
+
+  .article-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.article {
+  width: 95%;
+  margin-top: 3%;
+}
+
+.logo-row img {
+  width: 50px;
+  height: 50px;
+}
+
+.title-row {
+  margin: 20px;
+}
+
+.title-row h2 {
+  font-size: 10px;
+}
+
+.signup-form {
+  margin: 0px 10px 10px 10px;
+}
+
+.signin-form h2 {
+  font-size: 12px;
+}
+
+
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+.logo-row img {
+  width: 70px;
+  height: 70px;
+}
+
+.title-row {
+  margin: 50px;
+}
+
+.title-row h2 {
+  font-size: 20px;
+}
+
+
 }
