@@ -7,6 +7,17 @@ body {
   padding: 0;
 }
 
+h2 {
+  color: orange;
+  font-family: 'Alfa Slab One', serif;
+  font-size: 27px;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+}
+
+
 .nav {
   width: 95%;
   position: absolute;
@@ -42,10 +53,6 @@ body {
   align-items: center;
   padding: 20px;
   background-color: white ;
-}
-
-p {
-  font-family: "Open Sans", sans-serif;
 }
 
 .partnerlogo-container {
@@ -137,12 +144,8 @@ hr {
 }
 
 .signup-form h2 {
-  color: orange;
   text-align: center;
-  font-family: 'Alfa Slab One', serif;
-  font-size: 27px;
 }
-
 
 input {
   width: 100%;
