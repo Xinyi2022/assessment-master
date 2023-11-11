@@ -294,7 +294,19 @@ input[type=submit] {
 }
 
 .signin-form h2 {
-  font-size: 12px;
+  font-size: 25px;
+}
+
+.close {
+  font-size: 40px;
+}
+
+.signin-form {
+  width: 80%;
+}
+.signin-form p {
+  font-size: xx-small;
+  color: gray;
 }
 
 
@@ -314,6 +326,20 @@ input[type=submit] {
 
 .title-row h2 {
   font-size: 20px;
+}
+
+.signin-form h2 {
+  font-size: 20px;
+}
+
+
+.signin-form {
+  width: 80%;
+}
+
+.signin-form p {
+  font-size: smaller;
+  color: gray;
 }
 
 
