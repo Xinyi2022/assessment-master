@@ -86,7 +86,6 @@ hr {
 
 .magzine {
   color: orange;
-
   font-family: 'Alfa Slab One', serif;
   font-size: 27px;
 }
@@ -103,11 +102,7 @@ hr {
   padding: 3%;
 }
 
-.child-1 {
-  position: absolute;
-}
-
-.child-2 {
+.footer-container {
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -129,4 +124,37 @@ hr {
   justify-content: space-around;
   width: 80%;
 
+}
+
+.signup-container {
+  display: flex;
+  justify-content: center;
+
+}
+
+.signup-form {
+  margin: 60px 0;
+}
+
+.signup-form h2 {
+  color: orange;
+  text-align: center;
+  font-family: 'Alfa Slab One', serif;
+  font-size: 27px;
+}
+
+
+input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+}
+
+#name, #email {
+    margin: 6px 0;
+}
+
+input[type=submit] {
+  margin-top: 18px;
+  background-color: orange;
 }
