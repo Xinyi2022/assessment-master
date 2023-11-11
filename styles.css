@@ -35,3 +35,22 @@
   border-color: red;
 }
 
+.partnership {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+}
+
+.partnerlogo-container {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+}
+
+
