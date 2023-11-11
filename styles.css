@@ -42,9 +42,13 @@ p {
   align-self: center;
 }
 
-.banner-image {
+
+.slide-image {
+  display: none;
+}
+
+.slide img {
   width: 100%;
-  z-index: -1;
 }
 
 .partnership {
@@ -115,6 +119,10 @@ hr {
   position: absolute;
   width: 100%;
   align-items: center;
+}
+
+.background-image {
+  width: 100%;
 }
 
 .title-row {
