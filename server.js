@@ -78,15 +78,6 @@ function authenticate(name, pass, fn) {
   });
 }
 
-function restrict(req, res, next) {
-  if (req.session.user) {
-    next();
-  } else {
-    console.log('Access denied!');
-    res.redirect('/');
-  }
-}
-
 /**
  * APIs
  */
@@ -96,10 +87,6 @@ app.listen(PORT, () => {
 
 app.get('/', (req, res) => {
   res.render('index.html');
-});
-
-app.get('/parent_portal', restrict, (req, res) => {
-  res.render('parent_portal.html');
 });
 
 app.post('/parent_portal', (req, res) => {
@@ -123,10 +110,3 @@ app.post('/parent_portal', (req, res) => {
 
 app.post('/add_subscription', Subscription.add);
 
-app.get('/logout', (req, res) => {
-  // destroy the user's session to log them out
-  // will be re-created next request
-  req.session.destroy(() => {
-    res.redirect('/');
-  });
-});
