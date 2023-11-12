@@ -341,6 +341,18 @@ input[type=submit] {
   font-size: smaller;
   color: gray;
 }
-
-
 }
+
+/* parent portal page */
+.parent-nav {
+  height: 100%;
+  position: absolute;
+  margin: 30px 30px 0px 30px;
+}
+
+.parent-header {
+  color: white;
+  margin: 200px 100px 0px 100px;
+}
+
+
