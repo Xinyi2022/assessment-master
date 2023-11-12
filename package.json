@@ -15,6 +15,7 @@
     "ejs": "^3.1.9",
     "express": "^4.18.2",
     "express-session": "^1.17.3",
+    "http-status-codes": "^2.3.0",
     "mongoose": "^8.0.0",
     "nodemailer": "^6.9.7",
     "pbkdf2-password": "^1.2.1"
