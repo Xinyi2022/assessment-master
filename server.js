@@ -38,7 +38,7 @@ app.use(session({
 /**
  * Session-persisted message middleware
  */
-app.use(function (req, res, next) {
+app.use((req, res, next) => {
   var err = req.session.error;
   var msg = req.session.success;
   delete req.session.error;
@@ -56,7 +56,7 @@ const users = {
   admin: { name: 'admin' }
 };
 
-hash({ password: PASSWORD }, function (err, pass, salt, hash) {
+hash({ password: PASSWORD }, (err, pass, salt, hash) => {
   if (err) throw err;
   // store the salt & hash in the "db"
   users.admin.salt = salt;
@@ -71,7 +71,7 @@ function authenticate(name, pass, fn) {
   // apply the same algorithm to the POSTed password, applying
   // the hash against the pass / salt, if there is a match we
   // found the user
-  hash({ password: pass, salt: user.salt }, function (err, pass, salt, hash) {
+  hash({ password: pass, salt: user.salt }, (err, pass, salt, hash) => {
     if (err) return fn(err);
     if (hash === user.hash) return fn(null, user)
     fn(null, null)
@@ -107,14 +107,12 @@ app.get('/parent_portal', (req, res) => {
 
 
 app.post('/parent_portal', (req, res) => {
-  // console.log('password submitted:', req.body.password);
-  debugger;
-  authenticate(users.admin.name, req.body.password, function (err, user) {
+  authenticate(users.admin.name, req.body.password, (err, user) => {
     if (err) return next(err)
     if (user) {
       // Regenerate session when signing in
       // to prevent fixation
-      req.session.regenerate(function () {
+      req.session.regenerate(() => {
         // Store the user's primary key
         // in the session store to be retrieved,
         // or in this case the entire user object
@@ -127,10 +125,10 @@ app.post('/parent_portal', (req, res) => {
   });
 });
 
-app.get('/logout', function (req, res) {
+app.get('/logout', (req, res) => {
   // destroy the user's session to log them out
   // will be re-created next request
-  req.session.destroy(function () {
+  req.session.destroy(() => {
     res.redirect('/');
   });
 });

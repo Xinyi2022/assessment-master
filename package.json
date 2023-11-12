@@ -16,6 +16,7 @@
     "express": "^4.18.2",
     "express-session": "^1.17.3",
     "mongoose": "^8.0.0",
+    "nodemailer": "^6.9.7",
     "pbkdf2-password": "^1.2.1"
   },
   "devDependencies": {

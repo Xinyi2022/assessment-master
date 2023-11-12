@@ -1,4 +1,5 @@
 const Subscription = require('../db/Subsription');
+const { sendConfirmationEmail } = require('../mailer');
 
 exports.getAll = (req, res) => {
   Subscription.find({})
@@ -10,8 +11,9 @@ exports.getAll = (req, res) => {
 };
 
 exports.add = async (req, res) => {
+  const { email } = req.body;
   Subscription.where({
-    email: req.body.email
+    email: email
   }).findOne()
     .then(record => {
       if (record != null) {
@@ -20,10 +22,12 @@ exports.add = async (req, res) => {
       } else {
         const newSubscriber = new Subscription(req.body);
         newSubscriber.save()
-          .then(item =>
-            res.status(201)
-              .send("Subscribe success!")
-          )
+          .then(_ => {
+            sendConfirmationEmail(email)
+              .then(_ => res.status(201)
+                .send("Subscribe success!"))
+              .catch(err => console.log(err));
+          })
           .catch(err =>
             res.status(500)
               .send("Unable to subscribe")
