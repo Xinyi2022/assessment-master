@@ -402,12 +402,39 @@ input[type=submit] {
 
 .parent-header {
   margin: 25px;
-  font-size: 20px;
+  font-size: 30px;
   padding: 10px;
 }
 
+.pararent-paregraph {
+  flex-direction: column;
+}
 
+.spring-header {
+  font-size: 40px;
+}
 
+.basketball-girl img {
+  width: 100%;
+}
+
+.basketball-girl {
+  margin: 5%;
+}
+
+.basketball-paragraph {
+  margin: 5%;
+  color: white;
+
+}
+
+.flex-item {
+  width: 100%;
+  padding: 0;
+}
+.flex-item h1 {
+  font-size: 40px;
+}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -438,9 +465,6 @@ input[type=submit] {
   font-size: smaller;
   color: gray;
 }
-
-
-
 
 }
 
