@@ -247,6 +247,7 @@ input[type=submit] {
 .pararent-paregraph {
   display: flex;
   flex-direction: row;
+  width: 100%;
 }
 
 .spring-header{
@@ -259,10 +260,11 @@ input[type=submit] {
 
 .basketball-girl {
   margin: 5% 2% 2% 5%;
+  width: 44%;
 }
 
 .basketball-girl img {
-  width: 500px;
+  width: -webkit-fill-available;;
 }
 
 .basketball-paragraph {
@@ -464,6 +466,21 @@ input[type=submit] {
 .signin-form p {
   font-size: smaller;
   color: gray;
+}
+
+.parent-header {
+  width: max-content;
+  margin: 30%;
+  font-size: 40px;
+}
+
+.flex-item {
+  width: 45%;
+  padding: 10px;
+}
+
+.flex-item h1 {
+  font-size: 40px;
 }
 
 }
