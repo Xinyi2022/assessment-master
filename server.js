@@ -5,8 +5,8 @@ const express = require('express');
 const hash = require('pbkdf2-password')();
 const path = require('path');
 const session = require('express-session');
-const db = require('./db/db');
-const Subscription = require('./db/subscription.js');
+const db = require('./db/connector.js');
+const Subscription = require('./db/subscription-controllers.js');
 require('dotenv').config();
 
 const app = express();
@@ -90,7 +90,7 @@ app.listen(PORT, () => {
 database APIs
 */
 app.get('/subscriptions', Subscription.getAll);
-app.post('/subscriptions', Subscription.add);
+app.post('/add_subscription', Subscription.add);
 
 
 /*
