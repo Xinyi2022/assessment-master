@@ -371,6 +371,7 @@ input[type=submit] {
 
 .basketball-girl {
   margin: 5% 2% 2% 5%;
+  /* width: 50%; */
 }
 
 .basketball-paragraph {
@@ -382,4 +383,45 @@ input[type=submit] {
 .rightside-paragraphs h2 {
     margin: 0;
 }
+
+.flex-box-container {
+  display: flex;
+  color: white;
+  flex-wrap: wrap;
+  /* gap: 5px; */
+   row-gap: 10px;
+   margin: 5%;
+   /* column-gap: 10px; */
+}
+
+.flex-item {
+  width: 48%;
+  padding: 10px;
+}
+
+.location-container {
+  display: flex;
+}
+
+.location{
+  width: 100%;
+}
+
+.location-container h1{
+  position: absolute;
+  margin: 20px;
+
+}
+
+.flex-item h1 {
+  color: orange;
+  font-size: 50px;
+  color: orange;
+  width: 50%;
+}
+
+.practice p{
+  margin-top: 0;
+}
+
 
