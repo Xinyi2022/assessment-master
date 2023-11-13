@@ -1,44 +1,29 @@
 # README #
 
-Hello! If you're reading this, it means that you have moved on your coding assessment with 2Leaf.
+Hello! If you're reading this, the welcome to my website.
 
-## How do I get set up? ##
+## Tech Stack ##
+![javascript](https://img.shields.io/badge/JavaScript-20232A?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![node.js](https://img.shields.io/badge/Node.js-20232A?style=for-the-badge&logo=nodedotjs&logoColor=green)
+![HTML5](https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-20232A?style=for-the-badge&logo=css3&logoColor=e572b6)
+![Express](https://img.shields.io/badge/-Express-20232A?style=for-the-badge&logo=express&logoColor=yellow)
+![Git](https://img.shields.io/badge/git-20232A?style=for-the-badge&logo=git&logoColor=f05032)
+![GitHub](https://img.shields.io/badge/github-20232A?style=for-the-badge&logo=github&logoColor=181717)
+![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
 
-* Clone/Download this repository to your local environment
-* Follow the instructions and guidelines to the best of your abilities
-* Do as much as you can within your time limit
 
-## Assessment ##
 
-For this assessment, you will be asked to code a simple HTML landing page based on one of our designs.
-You will be provided with the following:
+## Instructions ##
+1. Download the zip file and unzip it. You should get a new folder `assessment-master-main`.
+2. Start a terminal and `cd` into this folder.
+3. `npm install`
+4. `npm start`
+5. Open a browser and visit `http://localhost:3000/`.
 
-* This repository, which includes a blank html, css, and javascript file where you will write your code. 
-* A design file using Figma, an online web development software we use for designs
-* [Figma File](https://www.figma.com/file/Cmc66amQ0hfRPGpjzO694H/Test-11%2F10?type=design&node-id=0-1&mode=design&t=frKr6wowuHisAarF-0)
-* An assets folder containing all of the images that are used in the design file, for your convenience.
-* Also included in the assets folder is a minified copy of jQuery, which will be the only additional library you should use for this website.
-* You should have all of the required assets you need for this project other than the font files, which have been purposely excluded but can be found [here](https://fonts.google.com/specimen/Open+Sans) and [here](https://fonts.google.com/specimen/Alfa+Slab+One)
+## Features ##
+- In the landing page, 1) the header changes every 5 seconds to switch between 2 header pictures. 2) there's a modal popup that stickies to the center of the screen, prompting users to log in. The modal is toggleable by clicking outside of the modal, or in the X in the top left corner.
+- Only users with approved password can access to the second page - the parent portal page.
+- Allow new users to subscribe to our website by providing their name and email, new users would get a confirmation email after sign up.
+- It is a responsive website that can be accessed from a desktop, mobile and tablet.
 
-### Instructions ###
-
-You have until your deadline to complete however much of the following you can:
-
-1. Git test: Use commits to show your work.
-2. HTML/CSS Test: Code only the landing page (the one with the two children playing basketball in the header). If you have extra time, you can code the secondary Parent Portal page as well.
-3. Javascript/jQuery Test: 1) Make it so that the header slides right every 5 seconds to reveal the alternate header (the picture of the children on the beach). 2) Create a modal popup that stickies to the center of the screen, prompting users to log in. The modal should be toggleable by clicking outside of the modal, or in the X in the top left corner.
-4. Mobile responsive test: The page should be mobile responsive and look appropriate on desktop, phone, and tablets.
-5. Back-end Test: Allow only approved users with the password access to the Parent Portal page (as a reminder, this page does not need to be coded unless you have extra time). Use Node.js, PHP, or another backend language of your choice. Include instructions on how to run your code.
-6. Database Test: Add back-end functionality for the "Stay updated" mailing list. Emails should be saved into some kind of database (Mongo DB, MySQL, text file, or other). Bonus points for sending a confirmation email.
-7. Done? ZIP your code (including .git folder and any .env) and upload to the provided Dropbox link. Bonus point if you also deploy to a live website.
-
-## Guidelines ##
-
-* Complete the assessment on time.
-* Use good coding practices.
-* Showcase your skills: We are purposefully leaving the requirements basic to allow you freedom to showcase your abilities and make it as complex as you would like.
-* Please refrain from using styling libraries like Bootstrap or Tailwind, although if you feel them necessary to include, we'd rather see that than nothing.
-
-#### Questions? ####
-
-If you have any questions about what is being asked of you for this project, please contact us before the due date.
