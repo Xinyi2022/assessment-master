@@ -1,6 +1,6 @@
 # README #
 
-Hello! If you're reading this, the welcome to my website.
+Hello! If you're reading this, then welcome to my website.
 
 ## Tech Stack ##
 ![javascript](https://img.shields.io/badge/JavaScript-20232A?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
