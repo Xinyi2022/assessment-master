@@ -2,6 +2,8 @@
 
 Hello! If you're reading this, then welcome to my website.
 
+It's live here: https://cute-blue-chimpanzee-wrap.cyclic.app
+
 ## Tech Stack ##
 ![javascript](https://img.shields.io/badge/JavaScript-20232A?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 ![node.js](https://img.shields.io/badge/Node.js-20232A?style=for-the-badge&logo=nodedotjs&logoColor=green)
