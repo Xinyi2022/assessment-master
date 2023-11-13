@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
+require('dotenv').config();
 
-const mongoURI = 'mongodb://0.0.0.0:27017/subscriptions';
+const mongoURI = process.env.MONGO_URI;
 
 const db = mongoose.connect(mongoURI);
 
